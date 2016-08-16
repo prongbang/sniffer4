@@ -14,8 +14,6 @@ chrome.webRequest.onResponseStarted.addListener(function (data) {
             data.tab = tabInfo;
             if (!tabInfo.url) return false;
 
-            console.log(data);
-
             var url = media.findURL(data);
             if(url != "") {
               console.log(url);
