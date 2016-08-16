@@ -1,2 +1,2 @@
-# Sniffer 4 Video Player
-Chrome Extension Sniff Video Player
+# Sniffer 4 Media Downloader
+Chrome Extension Sniff Media Downloader

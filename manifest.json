@@ -1,9 +1,9 @@
 {
-  "name": "Sniffer 4",
+  "name": "Sniffer 4 Media Downloader",
   "version": "1.0",
   "manifest_version": 2,
   "author": "prongbang",
-  "description": "Sniffer 4 video player",
+  "description": "Sniffer 4 Media Downloader",
   "browser_action": {
     "default_icon": "src/img/sniffer4_128x128.png"
   },
@@ -28,11 +28,9 @@
       "matches": [
         "<all_urls>"
       ],
-      /*"css": ["src/css/sniffer4.css"],*/
       "js": [
         "src/js/libs/jquery-1.11.3.min.js",
         "src/js/utils.js",
-        "src/js/http.js",
         "src/js/content.js"
       ],
       "run_at": "document_end"
@@ -42,9 +40,7 @@
     "scripts": [
       "src/js/libs/jquery-1.11.3.min.js",
       "src/js/utils.js",
-      "src/js/http.js",
-      "src/js/video.js",
-      "src/js/session.js",
+      "src/js/media.js",
       "src/js/background.js"
     ],
     "persistent": true

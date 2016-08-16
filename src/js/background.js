@@ -14,11 +14,12 @@ chrome.webRequest.onResponseStarted.addListener(function (data) {
             data.tab = tabInfo;
             if (!tabInfo.url) return false;
 
-            var url = video.findURLVideo(data);
+            console.log(data);
+
+            var url = media.findURL(data);
             if(url != "") {
               console.log(url);
               chrome.tabs.sendMessage(tab.id, { action:"success", url: url });
-              session.save(url);
             }
 
         }
